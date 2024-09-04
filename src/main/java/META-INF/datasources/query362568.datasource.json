@@ -1,0 +1,157 @@
+{
+  "customId": "query362568",
+  "queryName": "fonte produto personalizado",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Produto",
+  "entityFullName": "app.entity.Produto",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Produto",
+        "alias": "p",
+        "namespace": "app.entity.Produto",
+        "dataSourceOptions": {
+          "id": "app.Produto",
+          "customId": "Produto",
+          "customQueryName": "app.Produto",
+          "paramValues": [],
+          "entityFullName": "app.entity.Produto",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "nome",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "quantidade",
+              "type": "Int32",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "Produto",
+          "fullName": "app.entity.Produto",
+          "labelName": "app.entity.Produto (Produto)"
+        },
+        "name": "Produto"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "p"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": {
+      "blocklyClass": "blockly.Bloco",
+      "blocklyMethod": "Executar",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Consulta a Entidades\u003capp.entity.Produto\u003e",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "library": false,
+        "namespace": "blockly.Bloco",
+        "sourcePath": "src/main/java/blockly/Bloco.blockly",
+        "language": "java",
+        "class": "blockly.Bloco",
+        "methods": [
+          {
+            "name": "Executar",
+            "hasReturn": "true",
+            "params": [
+              "Consulta a Entidades\u003capp.entity.Produto\u003e"
+            ]
+          }
+        ]
+      }
+    },
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "nome": null,
+    "quantidade": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "nome": null,
+    "quantidade": null
+  },
+  "security": {
+    "id": null,
+    "nome": null,
+    "quantidade": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query362568/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}
